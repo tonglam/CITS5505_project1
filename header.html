@@ -1,106 +1,156 @@
 <link href="static/style/header.css" rel="stylesheet" />
 
-<header>
-  <nav class="navbar navbar-light bg-body-tertiary px-3 px-md-5" id="navMenu">
-    <div class="col-1 navbar-brand">
-      <a href="/index.html">
-        <div id="logoShort" class="d-sm-flex d-xl-none">
-          <img
-            class="rounded-circle border border-2 border-dark"
-            src="static/assets/logo-short.webp"
-            height="36"
-            width="36"
-            alt="logoShort"
-            loading="lazy"
-          />
-        </div>
-        <div id="logoLong" class="d-none d-xl-flex">
-          <img
-            src="static/assets/logo.webp"
-            height="50"
-            width="240"
-            alt="logo"
-            loading="lazy"
-          />
-        </div>
-      </a>
-    </div>
+<nav class="navbar navbar-light bg-body-tertiary px-3 px-md-5" id="navMenu">
+  <div class="col-1 navbar-brand">
+    <a href="/index.html">
+      <div id="logoLong" class="d-none d-xl-flex">
+        <img
+          class="rounded-circle border-0"
+          src="static/assets/logo_short.webp"
+          height="36"
+          width="36"
+          alt="logoShort"
+          loading="lazy"
+        />
+        <img
+          src="static/assets/logo.webp"
+          class="d-none d-xl-flex"
+          height="36"
+          width="100"
+          alt="logo"
+          loading="lazy"
+        />
+      </div>
+    </a>
+  </div>
 
-    <div class="col-4 d-none d-md-flex">
-      <ul class="navbar-nav flex-row gap-md-1 gap-lg-3 gap-xl-5">
-        <li class="nav-item me-3 me-lg-1">
-          <a id="navHome" class="nav-link" href="/index.html">Home </a>
-        </li>
-
-        <li class="nav-item me-3 me-lg-1">
-          <a id="navHistory" class="nav-link" href="/history.html">History</a>
-        </li>
-
-        <li class="nav-item me-3 me-lg-1">
-          <a id="navAbout" class="nav-link" href="/about.html">About</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-5 d-none d-md-flex input-group w-auto my-auto" id="search">
-      <span class="input-group-text border-0"
-        ><i class="fas fa-search"></i
-      ></span>
-      <input
-        autocomplete="off"
-        type="search"
-        class="form-control"
-        placeholder="Search for Anything..."
-      />
-    </div>
-
-    <ul class="col-2 navbar-nav flex-row justify-content-end gap-3">
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="mailto:2405602823@student.uwa.edu.au"
-          target="_blank"
-          role="button"
-        >
-          <i class="fa-regular fa-envelope fa-lg"></i>
-        </a>
+  <div class="col-4 d-none d-md-flex">
+    <ul class="navbar-nav flex-row gap-md-1 gap-lg-3 gap-xl-5">
+      <li class="nav-item me-3 me-lg-1">
+        <a id="navHome" class="nav-link" href="/index.html">Home </a>
       </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://github.com/tonglam"
-          target="_blank"
-          role="button"
-        >
-          <i class="fa-brands fa-github fa-lg"></i>
-        </a>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a id="navHistory" class="nav-link" href="/history.html">History</a>
       </li>
-      <li class="nav-item">
-        <div id="user" class="ml-5">
-          <a
-            class="nav-link btn btn-outline-light border-0"
-            href="/about.html"
-            role="button"
-            style="margin-top: -5px"
-          >
-            <img
-              src="/static//assets/avatar.webp"
-              class="rounded-circle border-0 box-shadow-none"
-              style="height: 32px"
-              alt="Avatar"
-            />
-          </a>
-        </div>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a id="navAbout" class="nav-link" href="/about.html">About</a>
       </li>
     </ul>
-  </nav>
-</header>
+  </div>
+
+  <div class="col-5 d-none d-md-flex input-group w-auto my-auto" id="search">
+    <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+    <input
+      autocomplete="off"
+      type="search"
+      class="form-control"
+      placeholder="Search for Anything..."
+    />
+  </div>
+
+  <ul class="col-2 navbar-nav flex-row justify-content-end gap-3">
+    <li
+      class="nav-item"
+      style="margin-top: -2px"
+      title="select theme"
+      id="light"
+    >
+      <a class="nav-link" role="button">
+        <i class="bi bi-brightness-high" style="font-size: 1.2rem"></i>
+      </a>
+    </li>
+    <li
+      class="nav-item d-none"
+      style="margin-top: -2px"
+      title="select theme"
+      id="dark"
+    >
+      <a class="nav-link" role="button">
+        <i class="bi bi-moon" style="font-size: 1.2rem"></i>
+      </a>
+    </li>
+    <li class="nav-item" title="send email">
+      <a
+        class="nav-link"
+        href="mailto:2405602823@student.uwa.edu.au"
+        target="_blank"
+        role="button"
+      >
+        <i class="fa-regular fa-envelope fa-lg"></i>
+      </a>
+    </li>
+    <li class="nav-item" title="visit github">
+      <a
+        class="nav-link"
+        href="https://github.com/tonglam"
+        target="_blank"
+        role="button"
+      >
+        <i class="fa-brands fa-github fa-lg"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <div id="user" class="ml-5">
+        <a
+          class="nav-link btn btn-outline-light border-0"
+          href="/about.html"
+          role="button"
+          style="margin-top: -5px"
+        >
+          <img
+            src="/static//assets/avatar.webp"
+            class="rounded-circle border-0 box-shadow-none"
+            style="height: 32px"
+            alt="Avatar"
+          />
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>
 
 <script type="text/javascript">
-  titleFull = $("title").text();
-  title = titleFull.split(" - ")[0];
-  navId = "#nav" + title;
-  $(navId).css("color", "blue");
-  $(navId).css("font-weight", "bold");
-  $(navId).css("text-decoration", "underline");
+  $(document).ready(function () {
+    const titleFull = $("title").text();
+    const title = titleFull.split(" - ")[0];
+    const navId = "#nav" + title;
+
+    // change active color
+    $(navId).css("color", "blue");
+    $(navId).css("font-weight", "bold");
+    $(navId).css("text-decoration", "underline");
+
+    // init theme
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      darkTheme();
+    } else {
+      lightTheme();
+    }
+
+    // change theme
+    $("#light").click(function () {
+      darkTheme();
+    });
+    $("#dark").click(function () {
+      lightTheme();
+      localStorage.setItem("theme", "light");
+    });
+
+    function lightTheme() {
+      $("html").attr("data-bs-theme", "light");
+      $("#light").removeClass("d-none");
+      $("#dark").addClass("d-none");
+      localStorage.setItem("theme", "light");
+    }
+
+    function darkTheme() {
+      $("html").attr("data-bs-theme", "dark");
+      $("#dark").removeClass("d-none");
+      $("#light").addClass("d-none");
+      localStorage.setItem("theme", "dark");
+    }
+  });
 </script>
