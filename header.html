@@ -111,7 +111,7 @@
   </ul>
 </nav>
 
-<script type="text/javascript">
+<script defer type="text/javascript">
   $(document).ready(function () {
     const titleFull = $("title").text();
     const title = titleFull.split(" - ")[0];
@@ -133,6 +133,7 @@
     // change theme
     $("#light").click(function () {
       darkTheme();
+      localStorage.setItem("theme", "dark");
     });
     $("#dark").click(function () {
       lightTheme();
@@ -143,14 +144,12 @@
       $("html").attr("data-bs-theme", "light");
       $("#light").removeClass("d-none");
       $("#dark").addClass("d-none");
-      localStorage.setItem("theme", "light");
     }
 
     function darkTheme() {
       $("html").attr("data-bs-theme", "dark");
       $("#dark").removeClass("d-none");
       $("#light").addClass("d-none");
-      localStorage.setItem("theme", "dark");
     }
   });
 </script>
