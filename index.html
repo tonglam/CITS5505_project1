@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - CITS5505 Individual project</title>
     <link
-      rel="shortcut icon"
       href="static/assets/favicon.ico"
+      rel="shortcut icon"
       type="image/x-icon"
     />
     <link
@@ -18,10 +18,19 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
       rel="stylesheet"
     />
     <link href="static/style/header.css" rel="stylesheet" />
+    <link href="static/style/index.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -88,9 +97,9 @@
         <ul class="col-2 navbar-nav flex-row justify-content-end gap-3">
           <li
             class="nav-item"
-            style="margin-top: -2px"
             title="select theme"
             id="light"
+            style="margin-top: -2px"
           >
             <a class="nav-link" role="button">
               <i class="bi bi-brightness-high" style="font-size: 1.2rem"></i>
@@ -98,9 +107,9 @@
           </li>
           <li
             class="nav-item d-none"
-            style="margin-top: -2px"
             title="select theme"
             id="dark"
+            style="margin-top: -2px"
           >
             <a class="nav-link" role="button">
               <i class="bi bi-moon" style="font-size: 1.2rem"></i>
@@ -132,10 +141,10 @@
                 class="nav-link btn btn-outline-light border-0"
                 href="/about.html"
                 role="button"
-                style="margin-top: -5px"
+                style="margin-top: -4px"
               >
                 <img
-                  src="/static//assets/avatar.webp"
+                  src="/static/assets/avatar.webp"
                   class="rounded-circle border-0 box-shadow-none"
                   style="height: 32px"
                   alt="Avatar"
@@ -147,15 +156,40 @@
       </nav>
     </header>
 
-    <div class="container-fluid"><p>Home</p></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+        <div class="col-8">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+      </div>
+    </div>
 
-    <footer>
-      <div class="d-sm-flex d-md-none fixed-bottom shadow">
-        <div class="navbar navbar-light bg-body-tertiary text-center">
+    <footer class="bg-body-tertiary text-center shadow mt-5">
+      <div class="p-3">
+        © 2024 Copyright:
+        <a class="text-body" href="mailto:2405602823@student.uwa.edu.au"
+          >Tong Lan</a
+        >
+      </div>
+
+      <div class="d-sm-flex d-md-none">
+        <div class="navbar navbar-light">
           <div class="col-4">
             <a
               id="bottomHistory"
-              class="btn btn-outline-dark border-0"
+              class="btn btn-outline-dark border-0 bottom-menu"
               href="/history.html"
               role="button"
               title="History"
@@ -166,7 +200,7 @@
           <div class="col-4">
             <a
               id="bottomHome"
-              class="btn btn-outline-dark border-0"
+              class="btn btn-outline-dark border-0 bottom-menu"
               href="/index.html"
               role="button"
               title="Home"
@@ -177,7 +211,7 @@
           <div class="col-4">
             <a
               id="bottomAbout"
-              class="btn btn-outline-dark border-0"
+              class="btn btn-outline-dark border-0 bottom-menu"
               href="/about.html"
               role="button"
               title="about"
@@ -189,54 +223,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script defer type="text/javascript">
-      $(document).ready(function () {
-        // change navigation active color
-        const titleFull = $("title").text();
-        const title = titleFull.split(" - ")[0];
-        const navId = "#nav" + title;
-
-        $(navId).css("color", "blue");
-        $(navId).css("font-weight", "bold");
-        $(navId).css("text-decoration", "underline");
-
-        // change bottom navigation active color
-        bottemId = "#bottom" + title;
-        $(bottemId).css("color", "red");
-
-        // init theme
-        const theme = localStorage.getItem("theme");
-        if (theme === "dark") {
-          darkTheme();
-        } else {
-          lightTheme();
-        }
-
-        // change theme
-        $("#light").click(function () {
-          darkTheme();
-          localStorage.setItem("theme", "dark");
-        });
-        $("#dark").click(function () {
-          lightTheme();
-          localStorage.setItem("theme", "light");
-        });
-
-        function lightTheme() {
-          $("html").attr("data-bs-theme", "light");
-          $("#light").removeClass("d-none");
-          $("#dark").addClass("d-none");
-        }
-
-        function darkTheme() {
-          $("html").attr("data-bs-theme", "dark");
-          $("#dark").removeClass("d-none");
-          $("#light").addClass("d-none");
-        }
-      });
-    </script>
+    <script defer src="/static/lib/ui.js"></script>
   </body>
 </html>

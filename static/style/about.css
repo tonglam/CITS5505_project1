@@ -1,0 +1,63 @@
+/* body {
+  background: #e8cbc0;
+  background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.profilePic {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  color: #20c997;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.card-body-text {
+  font-size: 0.9rem;
+}
+
+.card-footer-icon {
+  width: 40px;
+  height: 40px;
+  radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5%;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+}
