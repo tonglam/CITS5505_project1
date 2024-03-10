@@ -1,10 +1,10 @@
 $(document).ready(function () {
   // init theme
   const theme = localStorage.getItem("theme");
-  if (theme === "dark") {
-    darkTheme();
-  } else {
+  if (theme === "light") {
     lightTheme();
+  } else {
+    darkTheme();
   }
 
   // change navigation active color
@@ -36,6 +36,8 @@ $(document).ready(function () {
     $("#dark").addClass("d-none");
     $(".bottom-menu").removeClass("btn-outline-light");
     $(".bottom-menu").addClass("btn-outline-dark");
+    $(".github-button").removeClass("btn-outline-secondary");
+    $(".github-button").addClass("btn-outline-dark");
   }
 
   function darkTheme() {
@@ -44,5 +46,7 @@ $(document).ready(function () {
     $("#light").addClass("d-none");
     $(".bottom-menu").removeClass("btn-outline-dark");
     $(".bottom-menu").addClass("btn-outline-light");
+    $(".github-button").removeClass("btn-outline-dark");
+    $(".github-button").addClass("btn-outline-secondary");
   }
 });
