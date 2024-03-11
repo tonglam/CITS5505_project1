@@ -49,4 +49,12 @@ $(document).ready(function () {
     $(".github-button").removeClass("btn-outline-dark");
     $(".github-button").addClass("btn-outline-secondary");
   }
+
+  // tooltip
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 });
