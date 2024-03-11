@@ -51,10 +51,14 @@ $(document).ready(function () {
   }
 
   // tooltip
-  var tooltipTriggerList = [].slice.call(
+  const tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
   );
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
+
+  // carousel
+  const myCarousel = document.querySelector("#carouselExampleCaptions");
+  new bootstrap.Carousel(myCarousel);
 });

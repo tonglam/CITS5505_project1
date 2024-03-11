@@ -11,6 +11,27 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: rgb(85, 85, 85);
+.carousel-item {
+  height: 40vh;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-item {
+    height: 30vh;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-item {
+    height: 60vh;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    object-fit: cover;
+  }
 }

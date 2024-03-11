@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - CITS5505 Individual project</title>
+    <title>Concept - CITS5505 Individual project</title>
     <link
       href="/static/assets/favicon.ico"
       rel="shortcut icon"
@@ -30,7 +30,6 @@
       rel="stylesheet"
     />
     <link href="/static/style/header.css" rel="stylesheet" />
-    <link href="/static/style/index.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -64,7 +63,17 @@
         <div class="col-4 d-none d-md-flex">
           <ul class="navbar-nav flex-row gap-md-1 gap-lg-3 gap-xl-5">
             <li class="nav-item me-3 me-lg-1">
-              <a id="navHome" class="nav-link" href="/index.html">Home </a>
+              <a
+                id="navHome"
+                class="nav-link"
+                style="
+                  color: blue;
+                  font-weight: bold;
+                  text-decoration: underline;
+                "
+                href="/index.html"
+                >Home
+              </a>
             </li>
 
             <li class="nav-item me-3 me-lg-1">
@@ -154,164 +163,91 @@
           </li>
         </ul>
       </nav>
-
-      <!-- <div id="bg-img"></div> -->
     </header>
 
-    <section id="carouse">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/static/assets/img/projectPic/project1.webp"
-              class="d-block w-100"
-              alt="1"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/assets/favicon.ico"
-              class="d-block w-100"
-              alt="2"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/assets/img/projectPic/project1.webp"
-              class="d-block w-100"
-              alt="3"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="container-fluid">
+      <div class="py-3 mx-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="/index.html#Article">Article</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Concept</li>
+          </ol>
+        </nav>
       </div>
-    </section>
-
-    <div class="container-fluid py-5">
       <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <section class="text-center" id="article">
-            <h1 class="pb-5">Hyperlinks Articles</h1>
+        <div class="col-1 col-sm-2"></div>
+        <div class="col-10 col-sm-8">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h1 class="text-center pb-3 pb-sm-5">
+                This is a long title of the article
+              </h1>
 
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card">
-                  <img
-                    src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
-                    class="img-fluid"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Concept</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="/post/concept.html" class="btn btn-primary"
-                      >Read</a
-                    >
-                  </div>
-                </div>
-              </div>
+              <section id="content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio sapiente molestias consectetur. Fuga nulla officia error
+                  placeat veniam, officiis rerum laboriosam ullam molestiae
+                  magni velit laborum itaque minima doloribus eligendi! Lorem
+                  ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                  sapiente molestias consectetur. Fuga nulla officia error
+                  placeat veniam, officiis rerum laboriosam ullam molestiae
+                  magni velit laborum itaque minima doloribus eligendi!
+                </p>
 
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                  <img
-                    src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
-                    class="img-fluid"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">2</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="" class="btn btn-primary">Read</a>
-                  </div>
-                </div>
-              </div>
+                <p><strong>Optio sapiente molestias consectetur?</strong></p>
 
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                  <img
-                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
-                    class="img-fluid"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">3</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="" class="btn btn-primary">Read</a>
-                  </div>
-                </div>
-              </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  architecto ex ab aut tempora officia libero praesentium, sint
+                  id magnam eius natus unde blanditiis. Autem adipisci totam sit
+                  consequuntur eligendi.
+                </p>
+
+                <p class="note note-light">
+                  <strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Optio odit consequatur porro sequi ab
+                  distinctio modi. Rerum cum dolores sint, adipisci ad veritatis
+                  laborum eaque illum saepe mollitia ut voluptatum.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, libero repellat molestiae aperiam laborum aliquid
+                  atque magni nostrum, inventore perspiciatis possimus quia
+                  incidunt maiores molestias eaque nam commodi! Magnam, labore.
+                </p>
+
+                <img
+                  src="https://mdbootstrap.com/img/new/slides/041.jpg"
+                  class="img-fluid shadow-1-strong rounded mb-4"
+                  alt=""
+                />
+
+                <ul>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Sit</li>
+                  <li>Amet</li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                  temporibus nulla voluptatibus accusantium sapiente doloremque.
+                  Doloribus ratione laboriosam culpa. Ab officiis quidem,
+                  debitis nostrum in accusantium dolore veritatis eius est?
+                </p>
+              </section>
             </div>
-          </section>
+            <div class="col-sm-1"></div>
+          </div>
         </div>
-        <div class="col-1"></div>
+        <div class="col-1 col-sm-2"></div>
       </div>
     </div>
 
@@ -340,6 +276,7 @@
             <a
               id="bottomHome"
               class="btn btn-outline-dark border-0 bottom-menu"
+              style="color: red"
               href="/index.html"
               role="button"
               title="Home"
