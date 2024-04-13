@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+section {
+  margin: 0 10rem;
+}
+
+h1 {
+  font-family: "freight-big-pro";
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+p {
+  font-family: Inter;
+  letter-spacing: 0.55px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+header {
+  align-items: center;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-11vmin);
+  }
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
+
+@-webkit-keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(45deg);
+  }
+  70% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(225deg);
+  }
+}
+
+@-webkit-keyframes iconAnimation {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 0);
+  }
+  100% {
+    -webkit-transform: translate(-2px, 0);
+  }
+}
+
+/* flip card */
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+}
+/* flip the pane when hovered */
+.project-flip-container:hover .project-flipper,
+.project-flip-container.hover .project-flipper {
+  transform: rotateY(180deg);
+}
+
+.project-flip-container,
+.project-flip-front,
+.project-flip-back {
+  width: 360px;
+  height: 320px;
+}
+
+/* flip speed goes here */
+.project-flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.project-flip-front,
+.project-flip-back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.project-flip-front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.project-flip-back {
+  transform: rotateY(180deg);
+}

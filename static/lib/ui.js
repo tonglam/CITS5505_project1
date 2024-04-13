@@ -7,17 +7,11 @@ $(document).ready(function () {
     darkTheme();
   }
 
-  // change navigation active color
+  // change bottom navigation active color
   const titleFull = $("title").text();
   const title = titleFull.split(" - ")[0];
   const navId = "#nav" + title;
-
-  $(navId).css("color", "blue");
-  $(navId).css("font-weight", "bold");
-  $(navId).css("text-decoration", "underline");
-
-  // change bottom navigation active color
-  bottemId = "#bottom" + title;
+  const bottemId = "#bottom" + title;
   $(bottemId).css("color", "red");
 
   // change theme
@@ -57,8 +51,4 @@ $(document).ready(function () {
   tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
-
-  // carousel
-  const myCarousel = document.querySelector("#carouselExampleCaptions");
-  new bootstrap.Carousel(myCarousel);
 });

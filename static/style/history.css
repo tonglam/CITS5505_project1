@@ -1,20 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-section {
-  margin: 0 20rem;
-}
-
 .timeline-with-icons {
   border-left: 1px solid hsl(0, 0%, 90%);
   position: relative;
