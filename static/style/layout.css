@@ -22,21 +22,17 @@ h1 {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 2.5rem;
+  text-align: center;
+  align-items: center;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
 }
 p {
   font-family: Inter;
   letter-spacing: 0.55px;
   font-size: 16px;
   line-height: 28px;
-}
-
-header {
-  align-items: center;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-    0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @keyframes float {
@@ -103,15 +99,6 @@ header {
   }
   100% {
     -webkit-transform: translate(-2px, 0);
-  }
-}
-
-@keyframes fold-out {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }
 
