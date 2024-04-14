@@ -160,6 +160,7 @@ function handleCardClick(name) {
 // genertate random data
 
 async function handleRandomClick() {
+  formAlert("Generating random data...", true);
   const fake_person_url = "https://fakerapi.it/api/v1/persons?_quantity=1";
   const person_data = await fetch(fake_person_url)
     .then((response) => response.json())
