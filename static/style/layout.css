@@ -12,7 +12,7 @@ body {
 }
 
 section {
-  margin: 0 10rem;
+  margin: 0 20rem;
 }
 
 h1 {
@@ -106,6 +106,15 @@ header {
   }
 }
 
+@keyframes fold-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* flip card */
 
 /* entire container, keeps perspective */
@@ -121,7 +130,7 @@ header {
 .project-flip-container,
 .project-flip-front,
 .project-flip-back {
-  width: 360px;
+  width: 320px;
   height: 320px;
 }
 

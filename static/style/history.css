@@ -80,3 +80,7 @@
     top: -40px;
   }
 }
+
+.fold-out {
+  animation: fold-left-in 3s ease-in-out;
+}

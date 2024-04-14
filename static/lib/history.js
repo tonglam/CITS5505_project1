@@ -1,11 +1,19 @@
-function copyToClipboard(id) {
-  // copy content to clipboard
-  const contentId = "#copyContent" + id;
-  const text = $(contentId).text().trim();
-  copyContent(text);
+$(document).ready(function () {
+  // show history collapse by default
+  const collapseElementList = document.querySelectorAll(".collapse");
+  const collapseList = [...collapseElementList].map(
+    (collapseEl) => new bootstrap.Collapse(collapseEl)
+  );
+  collapseList.forEach((collapse) => {
+    collapse.show();
+  });
+});
 
-  // alert bar for 1.5 seconds
-  copyAlert();
+function copyToClipboard(id) {
+  const contentId = "#copyContent" + id;
+  const text = $(contentId).text().replace(/\s+/g, " ").trim();
+  copyContent(text);
+  copyAlert(text);
 }
 
 async function copyContent(text) {
@@ -16,9 +24,10 @@ async function copyContent(text) {
   }
 }
 
-async function copyAlert() {
+async function copyAlert(text) {
+  $("#copyAlert").html(`<p>Copied to clickboard!</p><p>${text}</p>`);
   $("#copyAlert").removeClass("d-none");
   setTimeout(function () {
     $("#copyAlert").addClass("d-none");
-  }, 1500);
+  }, 3000);
 }
