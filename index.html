@@ -35,7 +35,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-light bg-body-tertiary px-3 px-md-5"
+        class="navbar navbar-light bg-body-tertiary d-flex justify-content-between px-3 px-md-5"
         id="navMenu"
       >
         <div class="col-5 navbar-brand">
@@ -84,143 +84,418 @@
           </div>
         </div>
 
-        <div class="d-none d-md-flex align-items-center">
-          <audio controls autoplay loop>
-            <source
-              src="/static/audio/Song for Hyperlinks.mp3"
-              type="audio/mp3"
-            />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-
-        <ul class="col-2 navbar-nav flex-row justify-content-end gap-3">
-          <li
-            class="nav-item"
-            title="select theme"
-            id="light"
-            style="margin-top: -2px"
-          >
-            <a class="nav-link" role="button">
-              <i class="bi bi-brightness-high" style="font-size: 1.2rem"></i>
-            </a>
-          </li>
-          <li
-            class="nav-item d-none"
-            title="select theme"
-            id="dark"
-            style="margin-top: -2px"
-          >
-            <a class="nav-link" role="button">
-              <i class="bi bi-moon" style="font-size: 1.2rem"></i>
-            </a>
-          </li>
-          <li class="nav-item" title="send email">
-            <a
-              class="nav-link"
-              href="mailto:2405602823@student.uwa.edu.au"
-              target="_blank"
-              role="button"
+        <div class="col-4 d-flex align-items-center justify-content-end">
+          <ul class="col-4 navbar-nav flex-row justify-content-end gap-3">
+            <li
+              class="nav-item"
+              title="select theme"
+              id="light"
+              style="margin-top: -2px"
             >
-              <i class="fa-regular fa-envelope fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item" title="visit github">
-            <a
-              class="nav-link"
-              href="https://github.com/tonglam"
-              target="_blank"
-              role="button"
-            >
-              <i class="fa-brands fa-github fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <div id="user" class="ml-5">
-              <a
-                class="nav-link btn btn-outline-light border-0"
-                href="/about.html"
-                role="button"
-                style="margin-top: -4px"
-              >
-                <img
-                  src="/static/assets/img/avatar.webp"
-                  class="rounded-circle border-0 box-shadow-none"
-                  style="height: 32px"
-                  alt="Avatar"
-                />
+              <a class="nav-link" role="button">
+                <i class="bi bi-brightness-high" style="font-size: 1.2rem"></i>
               </a>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li
+              class="nav-item d-none"
+              title="select theme"
+              id="dark"
+              style="margin-top: -2px"
+            >
+              <a class="nav-link" role="button">
+                <i class="bi bi-moon" style="font-size: 1.2rem"></i>
+              </a>
+            </li>
+            <li class="nav-item" title="send email">
+              <a
+                class="nav-link"
+                href="mailto:2405602823@student.uwa.edu.au"
+                target="_blank"
+                role="button"
+              >
+                <i class="fa-regular fa-envelope fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item" title="visit github">
+              <a
+                class="nav-link"
+                href="https://github.com/tonglam"
+                target="_blank"
+                role="button"
+              >
+                <i class="fa-brands fa-github fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div id="user" class="ml-5">
+                <a
+                  class="nav-link btn btn-outline-light border-0"
+                  href="/about.html"
+                  role="button"
+                  style="margin-top: -4px"
+                >
+                  <img
+                    src="/static/assets/img/avatar.webp"
+                    class="rounded-circle border-0 box-shadow-none"
+                    style="height: 32px"
+                    alt="Avatar"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <section id="carouse">
+    <nav id="pageNav" class="navbar bg-body-tertiary sticky-top px-3 mb-3 pt-2">
+      <div class="navbar-brand">
+        <div class="col-4" id="total-word-count-display"></div>
+      </div>
+
+      <div class="col-6 d-none d-md-flex align-items-center gap-3">
+        <audio controls autoplay loop>
+          <source
+            src="/static/audio/Song for Hyperlinks.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="pt-3">
+          <p>sadadasdadasdsadadasdadasdsadadasdadasd</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Hyperlinks</a
+          >
+          <ul class="dropdown-menu text-capitalize">
+            <li>
+              <a class="dropdown-item" href="#concept">concept</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#implement">implementation</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#browsersHandle"
+                >browsers handle</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#hyperlinksVideo">watch video</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >ajax</a
+          >
+          <ul class="dropdown-menu text-capitalize">
+            <li>
+              <a class="dropdown-item" href="#ajax">ajax</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#ajaxWhatis">what is ajax</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#ajaxIntroduction"
+                >Ajax - Introduction with Example</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >http</a
+          >
+          <ul class="dropdown-menu text-capitalize">
+            <li>
+              <a class="dropdown-item" href="#http">protocol</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#httpRequest">request</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#httpMethod">method</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#httpVideo">watch video</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#anchorTags">anchor tags</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="concept">
+      <section>
+        <h1 class="mt-4">Hyperlinks</h1>
+      </section>
+
+      <div class="content-card" id="concept">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <div class="text-center pb-2">
+                  <img
+                    class="content-card-img"
+                    src="/static/assets/img/hyperlink.webp"
+                    alt="hyperlink"
+                  />
+                </div>
+                <h2 class="text-center mb-4">Concept of Hyperlinks</h2>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start px-4" id="concept-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        Hyperlinks, often simply referred to as links, are
+                        references in digital documents that users can follow to
+                        access other documents or specific parts of a document.
+                      </span>
+                    </p>
+                    <p class="text-start px-4" id="concept-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        They are a fundamental component of the World Wide Web,
+                        allowing for the interconnection of content across the
+                        vast expanse of the internet. Hyperlinks can be
+                        text-based or image-based and are typically
+                        distinguished from regular text by being underlined
+                        and/or colored, usually blue for unvisited links and
+                        purple for visited ones.</span
+                      >
+                    </p>
+                    <p class="text-start px-4" id="concept-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        Hyperlinks can be text-based or image-based and are
+                        typically distinguished from regular text by being
+                        underlined and/or colored, usually blue for unvisited
+                        links and purple for visited ones.</span
+                      >
+                    </p>
+                    <div id="concept-word-count-display"></div>
+                  </blockquote>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card mt-3" id="implement">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <h2 class="text-center mb-4">
+                  Implementation for Web Developers
+                </h2>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start px-4" id="implement-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        Web developers implement hyperlinks using HTML
+                        (Hypertext Markup Language), specifically the anchor tag
+                        &lt;a&gt;. The anchor tag includes an href attribute,
+                        which specifies the destination URL (Uniform Resource
+                        Locator) of the hyperlink. The content placed between
+                        the opening &lt;a href="..."&gt; and the closing
+                        &lt;/a&gt; tags is what users interact with, such as
+                        text or images
+                      </span>
+                    </p>
+                  </blockquote>
+                  <div id="implement-word-count-display"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card mt-3" id="browsersHandle">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <h2 class="text-center mb-4">How Browsers Handle Hyperlinks</h2>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start px-4" id="browers-handle-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        When a user clicks on a hyperlink, the browser processes
+                        the href attribute's URL, generating an HTTP GET request
+                        to retrieve the resource from the specified web address.
+                        This request is sent to the server hosting the target
+                        resource, which then responds with the content of the
+                        requested page or file. The browser then renders this
+                        content for the user, effectively completing the
+                        navigation initiated by the hyperlink.
+                      </span>
+                    </p>
+                    <p class="text-start px-4" id="browers-handle-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        Browsers also provide visual cues to users, such as
+                        changing the cursor to a hand icon when hovering over a
+                        link, and typically display the URL in the status bar at
+                        the bottom of the window. These cues help users
+                        understand that the text or image is clickable and will
+                        take them to another location.</span
+                      >
+                    </p>
+                    <p class="text-start px-4" id="browers-handle-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        In summary, hyperlinks are a critical component of web
+                        navigation, allowing users to explore the vast expanse
+                        of the internet seamlessly. For web developers,
+                        understanding how to effectively use the &lt;a&gt; tag
+                        and its attributes is essential for creating intuitive
+                        and navigable websites. Meanwhile, browsers play a
+                        crucial role in processing these links, making the
+                        interconnectedness of the web possible.</span
+                      >
+                    </p>
+                  </blockquote>
+                  <div id="browers-handle-word-count-display"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3 px-0 px-md-5 mx-1 mx-md-5" id="carousel">
       <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
+        id="carouselImplementation"
+        class="carousel slide px-0 px-md-5 mx-0 mx-md-5"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="/static/assets/img/projectPic/project1.webp"
+              src="/static/assets/img/code_bg.webp"
               class="d-block w-100"
-              alt="1"
+              alt="code_bg"
+              loading="lazy"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
+            <div
+              class="carousel-caption d-none d-md-block text-center text-dark pb-5 mb-4"
+            >
+              <h2 class="pb-3">Example of a Text Hyperlink</h2>
+              <img
+                class="pb-4"
+                src="/static/assets/img/code_1.webp"
+                alt="code_1"
+                loading="lazy"
+              />
+              <p id="implement-word-count">
+                In this example, "Visit Example.com" is the clickable text,
+                known as the anchor text, and
+                <strong>https://www.example.com</strong> is the destination URL.
+              </p>
+              <p class="visually-hidden-focusable" aria-hidden="true"></p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/static/assets/img/code_bg.webp"
+              class="d-block w-100"
+              alt="code_bg"
+              loading="lazy"
+            />
+            <div
+              class="carousel-caption d-none d-md-block text-center text-dark pb-5"
+            >
+              <h2 class="pb-3">Example of an Image Hyperlink</h2>
+              <img
+                class="pb-3"
+                src="/static/assets/img/code_2.webp"
+                alt="code_2"
+                loading="lazy"
+              />
+              <p id="implement-word-count">
+                Developers can also use the <strong>target</strong> attribute to
+                control how the linked document opens, such as in a new window
+                or tab (<strong>target="_blank"</strong>), or in the same frame
+                (<strong>target="_self"</strong>).
               </p>
             </div>
           </div>
+
           <div class="carousel-item">
             <img
-              src="/static/assets/favicon.ico"
+              src="/static/assets/img/code_bg.webp"
               class="d-block w-100"
-              alt="2"
+              alt="code_bg"
+              loading="lazy"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/assets/img/projectPic/project1.webp"
-              class="d-block w-100"
-              alt="3"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
+            <div
+              class="carousel-caption d-none d-md-block text-center text-dark"
+            >
+              <h2 class="pb-3">Local Links and Anchors</h2>
+              <img
+                class="pb-3"
+                src="/static/assets/img/code_3.webp"
+                alt="code_3"
+                loading="lazy"
+              />
+              <p id="implement-word-count">
+                Local links point to content within the same website. They can
+                use absolute URLs or relative URLs. Anchor links allow users to
+                jump to specific parts of a page using the
+                <strong>id</strong> attribute for the target element and linking
+                to it with a hash (<strong>#</strong>) followed by the id value.
               </p>
             </div>
           </div>
@@ -228,7 +503,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselImplementation"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -237,220 +512,563 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselImplementation"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+
+    <section class="my-4" id="hyperlinksVideo">
+      <h2>Watch Videos</h2>
+
+      <div class="d-flex justify-content-center py-2">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/4PdugNTfK5I?si=6_VO7cJNb3i-KcPv"
+          title="What is a hyperlink?"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="d-flex justify-content-center py-2">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/equn-8Cp_g8?si=-uMNeGeox8I_peyh"
+          title="Definition of Hyperlink || Hyperlink || computer"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
-    <div class="container-fluid py-5">
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <section class="text-center" id="article">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card h-80">
-                  <iframe
-                    src="https://www.youtube.com/embed/4PdugNTfK5I?si=6_VO7cJNb3i-KcPv"
-                    title="What is a hyperlink?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">What is a hyperlink?</h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.googleusercontent.com/WFYqjo81TddYlzDqrZ57Q4oPiLl1o6DqzHbQgzGD-Ccw7JhqFqjIbj1N2B0zSR2d98-88F681A=s176-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author1"
-                      />
-                      <p class="text-muted author-name">
-                        Marketing Business Network
-                      </p>
-                    </div>
-                    <p class="card-text text-start">
-                      This video presentation explains what a hyperlink is in a
-                      way that's simple and easy to understand.
-                    </p>
-                  </div>
-                </div>
-              </div>
+    <div id="anchorTags">
+      <section>
+        <h1 class="mt-4">Anchor Tags</h1>
+      </section>
 
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card h-80">
-                  <iframe
-                    src="https://www.youtube.com/embed/AlkDbnbv7dk?si=IiGl-kcHJM6Psmy6"
-                    title="What happens when you type a URL into your browser?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      What happens when you type a URL into your browser?
-                    </h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.googleusercontent.com/efrVnDJbJOQ5XcXrrFhA9V2wTXh6gP_i0KycoYjqhN3nEh6VbCgqMQakAcFqEsguw7wxhHEjnA=s176-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author2"
-                      />
-                      <p class="text-muted author-name">ByteByteGo</p>
-                    </div>
-                    <p class="card-text text-start">
-                      What happens when you type a URL into your browser?
+      <div class="content-card mt-3">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <figure class="text-center">
+                  <blockquote class="blockquote pt-2">
+                    <p class="text-start px-4" id="anchor-tag-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        Anchor tags, defined by the &lt;a&gt; element in HTML
+                        (Hypertext Markup Language), are used to create
+                        hyperlinks on web pages. These hyperlinks allow users to
+                        jump from one resource to another with a single click.
+                      </span>
                     </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-80">
-                  <iframe
-                    src="https://www.youtube.com/embed/WiRJ3GYCAAI?si=TIbaHva2UM5wLwgY"
-                    title="What is a hyperlink example?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">What is a hyperlink example?</h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.ggpht.com/56doHJPUA9GHeIk4qtXTIjaxnadajt7F9Ys79XG_vr_g959YEKNeO5wfQ-AFyvTNdZLhZXR0fg=s88-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author3"
-                      />
-                      <p class="text-muted author-name">Λsk Λbout Essentials</p>
-                    </div>
-                    <p class="card-text text-start">
-                      Laura S. Harris (2021, March 17.) What is a hyperlink
-                      example?
+                    <p class="text-start px-4" id="anchor-tag-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        When a user clicks on this hyperlink, the browser will
+                        make an HTTP request to the URL specified in the
+                        <strong>href</strong> attribute.</span
+                      >
                     </p>
-                  </div>
-                </div>
+                  </blockquote>
+                  <div id="anchor-tag-word-count-display"></div>
+                </figure>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-80">
-                  <iframe
-                    src="https://www.youtube.com/embed/equn-8Cp_g8?si=-uMNeGeox8I_peyh"
-                    title="Definition of Hyperlink || Hyperlink || computer"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Definition of Hyperlink || Hyperlink || computer
-                    </h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.googleusercontent.com/bqPMrHx5F0L7TuDXggKA958P_DKqaGMa4JNU1X05_ntgKIwMh5pb9cC4C1smNKuMqjugZgl3vQ=s176-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author4"
-                      />
-                      <p class="text-muted author-name">learn with jyotisna</p>
-                    </div>
-                    <p class="card-text text-start">
-                      #hyperlink #writingcommunity #educational #hyperlink
-                      #hyperlinks #computer #computerscience #computerknowledge
-                      #computereducation #educational #writingcommunity #writing
-                      #newvideo #computers #definition
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <iframe
-                    src="https://www.youtube.com/embed/P-TOCUWA-5A?si=IHtyFRPMhTHQWR9U"
-                    title="What is a Hyperlink? How do Hyperlinks work?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      What is a Hyperlink? How do Hyperlinks work?
-                    </h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.ggpht.com/m_WtmXBRaPHq0Z9qbQAngjomk5hZEJ-_xCM5oHvl0OWJI2wDznG-tkM0v4tE5bTF41XqAiIE7w=s176-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author1"
-                      />
-                      <p class="text-muted author-name">How To Assistant</p>
-                    </div>
-                    <p class="card-text text-start">
-                      What is a Hyperlink? How do Hyperlinks work? Hyperlinks
-                      are words or phrases called "hypertext" that act as
-                      shortcuts to other documents, or other website pages. In
-                      this video you will learn about hyperlinks and how do they
-                      work.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-80">
-                  <iframe
-                    src="https://www.youtube.com/embed/0YLe8RZ1KM0?si=uT5aiO0Ctfihg4tG"
-                    title="How To Create A Hyperlink"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                  <div class="card-body">
-                    <h5 class="card-title">How To Create A Hyperlink</h5>
-                    <div
-                      class="d-flex justify-content-center align-self-center pt-2"
-                    >
-                      <img
-                        src="https://yt3.googleusercontent.com/ytc/AIdro_mg1_M6P1RF23JJviNwOtQOoUDe00rGBxg2wVaROQ=s176-c-k-c0x00ffffff-no-rj"
-                        class="rounded-circle border-0 box-shadow-none author-avatar"
-                        alt="author6"
-                      />
-                      <p class="text-muted author-name">How-To Guide</p>
-                    </div>
-                    <p class="card-text text-start">
-                      Want to share a link of online content by creating a
-                      Hyperlink? Instead of using a long URL, Hyperlink on a
-                      word is very useful and easy to read. Follow the easy
-                      steps as shown in this video.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
-        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <div id="ajax">
+      <section>
+        <h1 class="mt-4">AJAX</h1>
+      </section>
+
+      <div class="content-card mt-3">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <div class="text-center mb-4 pb-2">
+                  <img
+                    class="content-card-img"
+                    src="/static/assets/img/ajax.webp"
+                    alt="ajax"
+                  />
+                </div>
+                <div id="concept-word-count-display"></div>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start pt-2 px-4" id="ajax-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        AJAX, which stands for Asynchronous JavaScript and XML,
+                        is a set of web development techniques that allows web
+                        applications to communicate with a server in the
+                        background, without interfering with the current state
+                        of the page. Despite its name, AJAX does not necessarily
+                        involve XML and can work with other data formats such as
+                        JSON, HTML, or plain text. The core of AJAX is the
+                        XMLHttpRequest object (or the newer fetch API), which is
+                        used to perform asynchronous HTTP requests from
+                        JavaScript to the server.
+                      </span>
+                    </p>
+                    <p class="text-start px-4" id="ajax-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        The key to AJAX is the XMLHttpRequest object (or the
+                        newer fetch API), which is used to interact with
+                        servers. It allows web pages to be updated
+                        asynchronously by exchanging small amounts of data with
+                        the server behind the scenes. This means that it is
+                        possible to update parts of a web page without reloading
+                        the whole page.</span
+                      >
+                    </p>
+                    <p class="text-start px-4" id="ajax-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">Key Features</span>
+                    </p>
+                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>Use of XMLHttpRequest Object</strong>: At the
+                      heart of AJAX is the <strong>XMLHttpRequest</strong>
+                      object, which is responsible for sending and receiving
+                      data asynchronously.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>Support for Various Data Formats</strong>:
+                      Although XML is in the name, AJAX can work with JSON,
+                      HTML, and plain text, making it versatile for different
+                      types of data exchange.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>Modern Alternatives</strong>: The<strong
+                        >fetch</strong
+                      >
+                      API provides a modern, promise-based alternative to
+                      <strong>XMLHttpRequest</strong> for making asynchronous
+                      requests. It is more powerful and flexible, integrating
+                      better with other web technologies.
+                    </p>
+                  </blockquote>
+                  <div class="my-4" id="ajax-word-count-display"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="my-4" id="ajaxWhatis">
+      <h2>What is AJAX</h2>
+
+      <img
+        src="/static/assets/img/what-is-ajax.webp"
+        alt="what_is_ajax"
+        loading="lazy"
+        width="100%"
+      />
+    </section>
+
+    <section class="my-4" id="ajaxIntroduction">
+      <h2>Ajax - Introduction with Example</h2>
+
+      <div class="d-flex justify-content-center">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/VTpPNIX1JXc?si=Qluap2Juh8jh0n8L"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <div id="http">
+      <section>
+        <h1 class="mt-4">HTTP</h1>
+      </section>
+
+      <div class="content-card" id="protocol">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <h2 class="text-center mb-4">Protocol</h2>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start px-4" id="http-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        HTTP (Hypertext Transfer Protocol) is an application
+                        layer protocol in the Internet protocol suite model for
+                        distributed, collaborative, hypermedia information
+                        systems. It is the foundation of data communication for
+                        the World Wide Web, where hypertext documents include
+                        hyperlinks to other resources that users can easily
+                        access, for example, by a mouse click or by tapping the
+                        screen in a web browser.
+                      </span>
+                    </p>
+                    <p class="text-start px-4" id="http-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic"> Evolution of HTTP</span>
+                    </p>
+                    <p class="text-start px-4 mx-4" id="http-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>HTTP/0.9</strong>: The first version of HTTP,
+                      simple and limited to GET requests for fetching HTML
+                      documents only.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="http-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>HTTP/1.0</strong>: Introduced a structured format
+                      adding status codes, methods (GET, POST, HEAD), and MIME
+                      types. It was a significant step but lacked features for
+                      efficient internet communication.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="http-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>HTTP/1.1</strong>: Brought improvements like
+                      persistent connections, chunked transfer encoding, and
+                      additional caching mechanisms. It also introduced request
+                      methods such as OPTIONS, PUT, DELETE, TRACE, and CONNECT.
+                      Despite these improvements, HTTP/1.1 had limitations like
+                      head-of-line blocking and inefficient use of TCP
+                      connections.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="http-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>HTTP/2</strong>: The latest version, still in
+                      development, aims to overcome the limitations of HTTP/2 by
+                      using QUIC (Quick UDP Internet Connections) over UDP
+                      instead of TCP. This change addresses the head-of-line
+                      blocking problem at the transport layer and introduces
+                      benefits like improved connection migration, 0-RTT
+                      connections, and encryption by default with TLS 1.3.
+                      HTTP/3 is designed for unstable connections, such as
+                      mobile networks, and aims to provide low latency, high
+                      throughput, and high reliability.
+                    </p>
+                    <p class="text-start px-4 mx-4" id="http-word-count">
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>HTTP/3</strong>: The first version of HTTP, simple
+                      and limited to GET requests for fetching HTML documents
+                      only.
+                    </p>
+                  </blockquote>
+                  <div id="http-word-count-display"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card mt-3" id="httpRequest">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-3">
+                <h2 class="text-center mb-4">Requests</h2>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-start px-4" id="http-request-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        HTTP (Hypertext Transfer Protocol) requests are the core
+                        of data communication on the World Wide Web. They are
+                        used by web browsers to request resources from web
+                        servers. There are several types of HTTP requests, with
+                        the most common being:
+                      </span>
+                    </p>
+                    <p
+                      class="text-start px-4 mx-4"
+                      id="http-request-word-count"
+                    >
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>GET</strong>: Requests data from a specified
+                      resource.
+                    </p>
+                    <p
+                      class="text-start px-4 mx-4"
+                      id="http-request-word-count"
+                    >
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>POST</strong>: Submits data to be processed to a
+                      specified resource.
+                    </p>
+                    <p
+                      class="text-start px-4 mx-4"
+                      id="http-request-word-count"
+                    >
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>PUT</strong>: Updates a specified resource.
+                    </p>
+                    <p
+                      class="text-start px-4 mx-4"
+                      id="http-request-word-count"
+                    >
+                      <i class="fa-solid fa-circle-check text-primary"></i>
+                      <strong>DELETE</strong>: Deletes a specified resource.
+                    </p>
+                    <p class="text-start px-4" id="http-request-word-count">
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-primary"
+                      ></i>
+                      <span class="lead font-italic">
+                        When a user clicks on a hyperlink, the browser typically
+                        sends a GET request to the server, which responds with
+                        the content of the requested resource, such as an HTML
+                        page, image, or video.</span
+                      >
+                    </p>
+                  </blockquote>
+                  <div id="http-request-word-count-display"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="my-4" id="httpMethod">
+      <h2>Method</h2>
+
+      <div class="btn-group gap-1" role="group" aria-label="http">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasGet"
+          aria-controls="offcanvasGet"
+        >
+          GET
+        </button>
+        <button
+          type="button"
+          class="btn btn-success"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasPost"
+          aria-controls="offcanvasPost"
+        >
+          POST
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasPut"
+          aria-controls="offcanvasPut"
+        >
+          PUT
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDelete"
+          aria-controls="offcanvasDelete"
+        >
+          DELETE
+        </button>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasGet"
+        aria-labelledby="offcanvasGetLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasGetLabel">GET</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body" id="http-method-word-count">
+          <p>
+            <strong>GET</strong> requests are the most common and widely used
+            methods in APIs and websites. Simply put, the
+            <strong>GET</strong> method is used to retreive data from a server
+            at the specified resource.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasPost"
+        aria-labelledby="offcanvasPostLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasPostLabel">POST</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body" id="http-method-word-count">
+          <p>
+            In web services, <strong>POST</strong> requests are used to send
+            data to the API server to create or update a resource. The data sent
+            to the server is stored in the request body of the HTTP request.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasPut"
+        aria-labelledby="offcanvasPutLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasPutLabel">PUT</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body" id="http-method-word-count">
+          <p>
+            Simlar to <strong>POST</strong>, <strong>PUT</strong> requests are
+            used to send data to the API to update or create a resource. The
+            difference is that <strong>PUT</strong> requests are idempotent.
+            That is, calling the same <strong>PUT</strong> request multiple
+            times will always produce the same result. In contrast, calling a
+            <strong>POST</strong> request repeatedly make have side effects of
+            creating the same resource multiple times.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDelete"
+        aria-labelledby="offcanvasDeleteLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDeleteLabel">DELETE</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body" id="http-method-word-count">
+          <p>
+            The <strong>DELETE</strong> method is exactly as it sounds: delete
+            the resource at the specified URL. This method is one of the more
+            common in RESTful APIs so it's good to know how it works.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-4" id="httpVideo">
+      <h2>Watch Videos</h2>
+
+      <div class="d-flex justify-content-center py-2">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/ALq0xKp3P9E?si=Tw0ZsQbY-D_zH6F3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="d-flex justify-content-center py-2">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/-Zea7GB2OwA?si=hvSvtEVkeT7Kfwji"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <iframe
+          width="800"
+          height="440"
+          src="https://www.youtube.com/embed/eesqK59rhGA?si=NGvFRp0k8M6eP2Ap"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <div
+      class="d-flex justify-content-end sticky-bottom pb-3"
+      id="sectionArrow"
+    >
+      <div class="col-1">
+        <img
+          class="arrow arrowAnimation"
+          src="/static/assets/img/arrowUp.webp"
+          alt="arrowUp"
+          title="Scroll to top"
+          loading="lazy"
+          onclick="location.href='#pageNav'"
+        />
       </div>
     </div>
 
@@ -612,5 +1230,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="/static/lib/ui.js"></script>
+    <script defer src="/static/lib/index.js"></script>
   </body>
 </html>

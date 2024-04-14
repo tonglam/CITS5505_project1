@@ -98,31 +98,6 @@
   cursor: pointer;
 }
 
-/* arrow styles */
-
-.arrow {
-  position: relative;
-  cursor: pointer;
-  height: 2rem;
-  background: white;
-}
-
-.arrowAnimation {
-  -webkit-animation: arrowAnimation 0.5s infinite;
-  -webkit-animation-fill-mode: both;
-}
-
-@media screen and (max-width: 1200px) {
-  section {
-    margin: 0 5%;
-  }
-
-  section,
-  .section-container {
-    height: fit-content;
-  }
-}
-
 /* card rotation animation */
 .cardRotate {
   transform: rotateY(0deg);

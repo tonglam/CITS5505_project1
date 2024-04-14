@@ -16,14 +16,17 @@ section {
 }
 
 h1 {
-  font-family: "freight-big-pro";
+  color: #00bfbf;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 800;
+  text-transform: capitalize;
   line-height: 1;
   margin-bottom: 2.5rem;
   text-align: center;
   align-items: center;
+  border-bottom: 3px dotted #008080;
+  padding-bottom: 6px;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
     0 2px 4px -2px var(--tw-shadow-color);
@@ -33,6 +36,17 @@ p {
   letter-spacing: 0.55px;
   font-size: 16px;
   line-height: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5%;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
 }
 
 @keyframes float {
@@ -50,6 +64,21 @@ p {
   }
 }
 
+@keyframes float-slow {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+}
+
 @keyframes move {
   25% {
     transform: translatey(-5.8vmin);
@@ -60,18 +89,6 @@ p {
   }
   75% {
     transform: translatey(-16.5vmin);
-  }
-}
-
-@-webkit-keyframes arrowAnimation {
-  0% {
-    -webkit-transform: translate(0, 0px);
-  }
-  50% {
-    -webkit-transform: translate(0, -5px);
-  }
-  100% {
-    -webkit-transform: translate(0, -10px);
   }
 }
 
@@ -118,7 +135,7 @@ p {
 .project-flip-front,
 .project-flip-back {
   width: 320px;
-  height: 320px;
+  height: 340px;
 }
 
 /* flip speed goes here */
@@ -149,4 +166,30 @@ p {
 /* back, initially hidden pane */
 .project-flip-back {
   transform: rotateY(180deg);
+}
+
+/* arrow styles */
+
+.arrow {
+  position: relative;
+  cursor: pointer;
+  height: 2rem;
+  background: white;
+}
+
+.arrowAnimation {
+  -webkit-animation: arrowAnimation 0.5s infinite;
+  -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+  }
 }

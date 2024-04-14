@@ -1,3 +1,22 @@
+h2 {
+  color: #00bfbf;
+}
+
+.content-card {
+  margin: 0 50px;
+}
+
+.content-card-img {
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float-slow 3s ease-in-out infinite;
+  width: 50px;
+  border-radius: 25%;
+}
+
 .carousel-item {
   height: 40vh;
   background: no-repeat center center scroll;
