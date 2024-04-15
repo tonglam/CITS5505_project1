@@ -157,7 +157,7 @@
       <div class="col-6 d-none d-md-flex align-items-center gap-3">
         <audio controls autoplay loop id="audio">
           <source
-            src="/static/audio/Song for Hyperlinks.mp3"
+            src="/static/audio/Song-for-Hyperlinks.mp3"
             type="audio/mp3"
           />
           Your browser does not support the audio element.
@@ -255,7 +255,7 @@
       </ul>
     </nav>
 
-    <div id="concept">
+    <div id="hyperlinks">
       <section>
         <h1 class="mt-4">Hyperlinks</h1>
       </section>
@@ -275,7 +275,7 @@
                 <h2 class="text-center mb-4">Concept of Hyperlinks</h2>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start px-4" id="concept-word-count">
+                    <p class="concept-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -285,7 +285,7 @@
                         access other documents or specific parts of a document.
                       </span>
                     </p>
-                    <p class="text-start px-4" id="concept-word-count">
+                    <p class="concept-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -299,7 +299,7 @@
                         purple for visited ones.</span
                       >
                     </p>
-                    <p class="text-start px-4" id="concept-word-count">
+                    <p class="concept-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -329,7 +329,7 @@
                 </h2>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start px-4" id="implement-word-count">
+                    <p class="implement-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -361,7 +361,7 @@
                 <h2 class="text-center mb-4">How Browsers Handle Hyperlinks</h2>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start px-4" id="browers-handle-word-count">
+                    <p class="browers-handle-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -376,7 +376,7 @@
                         navigation initiated by the hyperlink.
                       </span>
                     </p>
-                    <p class="text-start px-4" id="browers-handle-word-count">
+                    <p class="browers-handle-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -389,7 +389,7 @@
                         take them to another location.</span
                       >
                     </p>
-                    <p class="text-start px-4" id="browers-handle-word-count">
+                    <p class="browers-handle-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -438,7 +438,7 @@
                 alt="code_1"
                 loading="lazy"
               />
-              <p id="implement-word-count">
+              <p class="implement-word-count">
                 In this example, "Visit Example.com" is the clickable text,
                 known as the anchor text, and
                 <strong>https://www.example.com</strong> is the destination URL.
@@ -464,7 +464,7 @@
                 alt="code_2"
                 loading="lazy"
               />
-              <p id="implement-word-count">
+              <p class="implement-word-count">
                 Developers can also use the <strong>target</strong> attribute to
                 control how the linked document opens, such as in a new window
                 or tab (<strong>target="_blank"</strong>), or in the same frame
@@ -490,7 +490,7 @@
                 alt="code_3"
                 loading="lazy"
               />
-              <p id="implement-word-count">
+              <p class="implement-word-count">
                 Local links point to content within the same website. They can
                 use absolute URLs or relative URLs. Anchor links allow users to
                 jump to specific parts of a page using the
@@ -530,7 +530,6 @@
           height="440"
           src="https://www.youtube.com/embed/4PdugNTfK5I?si=6_VO7cJNb3i-KcPv"
           title="What is a hyperlink?"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
@@ -543,7 +542,6 @@
           height="440"
           src="https://www.youtube.com/embed/equn-8Cp_g8?si=-uMNeGeox8I_peyh"
           title="Definition of Hyperlink || Hyperlink || computer"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
@@ -563,7 +561,7 @@
               <div class="card-body p-3">
                 <figure class="text-center">
                   <blockquote class="blockquote pt-2">
-                    <p class="text-start px-4" id="anchor-tag-word-count">
+                    <p class="anchor-tag-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -574,7 +572,7 @@
                         jump from one resource to another with a single click.
                       </span>
                     </p>
-                    <p class="text-start px-4" id="anchor-tag-word-count">
+                    <p class="anchor-tag-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -611,10 +609,9 @@
                     alt="ajax"
                   />
                 </div>
-                <div id="concept-word-count-display"></div>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start pt-2 px-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start pt-2 px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -631,7 +628,7 @@
                         JavaScript to the server.
                       </span>
                     </p>
-                    <p class="text-start px-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -645,27 +642,27 @@
                         the whole page.</span
                       >
                     </p>
-                    <p class="text-start px-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
                       <span class="lead font-italic">Key Features</span>
                     </p>
-                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>Use of XMLHttpRequest Object</strong>: At the
                       heart of AJAX is the <strong>XMLHttpRequest</strong>
                       object, which is responsible for sending and receiving
                       data asynchronously.
                     </p>
-                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>Support for Various Data Formats</strong>:
                       Although XML is in the name, AJAX can work with JSON,
                       HTML, and plain text, making it versatile for different
                       types of data exchange.
                     </p>
-                    <p class="text-start px-4 mx-4" id="ajax-word-count">
+                    <p class="ajax-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>Modern Alternatives</strong>: The<strong
                         >fetch</strong
@@ -689,10 +686,10 @@
       <h2 class="pb-4">What is AJAX</h2>
 
       <img
+        class="w-100"
         src="/static/assets/img/what-is-ajax.webp"
         alt="what_is_ajax"
         loading="lazy"
-        width="100%"
       />
     </section>
 
@@ -705,7 +702,6 @@
           height="440"
           src="https://www.youtube.com/embed/VTpPNIX1JXc?si=Qluap2Juh8jh0n8L"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
@@ -726,7 +722,7 @@
                 <h2 class="text-center mb-4">Protocol</h2>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start px-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -741,26 +737,26 @@
                         screen in a web browser.
                       </span>
                     </p>
-                    <p class="text-start px-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
                       <span class="lead font-italic"> Evolution of HTTP</span>
                     </p>
-                    <p class="text-start px-4 mx-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>HTTP/0.9</strong>: The first version of HTTP,
                       simple and limited to GET requests for fetching HTML
                       documents only.
                     </p>
-                    <p class="text-start px-4 mx-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>HTTP/1.0</strong>: Introduced a structured format
                       adding status codes, methods (GET, POST, HEAD), and MIME
                       types. It was a significant step but lacked features for
                       efficient internet communication.
                     </p>
-                    <p class="text-start px-4 mx-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>HTTP/1.1</strong>: Brought improvements like
                       persistent connections, chunked transfer encoding, and
@@ -770,7 +766,7 @@
                       head-of-line blocking and inefficient use of TCP
                       connections.
                     </p>
-                    <p class="text-start px-4 mx-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>HTTP/2</strong>: The latest version, still in
                       development, aims to overcome the limitations of HTTP/2 by
@@ -783,7 +779,7 @@
                       mobile networks, and aims to provide low latency, high
                       throughput, and high reliability.
                     </p>
-                    <p class="text-start px-4 mx-4" id="http-word-count">
+                    <p class="http-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>HTTP/3</strong>: The first version of HTTP, simple
                       and limited to GET requests for fetching HTML documents
@@ -806,7 +802,7 @@
                 <h2 class="text-center mb-4">Requests</h2>
                 <figure class="text-center">
                   <blockquote class="blockquote">
-                    <p class="text-start px-4" id="http-request-word-count">
+                    <p class="http-request-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -818,37 +814,25 @@
                         the most common being:
                       </span>
                     </p>
-                    <p
-                      class="text-start px-4 mx-4"
-                      id="http-request-word-count"
-                    >
+                    <p class="http-request-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>GET</strong>: Requests data from a specified
                       resource.
                     </p>
-                    <p
-                      class="text-start px-4 mx-4"
-                      id="http-request-word-count"
-                    >
+                    <p class="http-request-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>POST</strong>: Submits data to be processed to a
                       specified resource.
                     </p>
-                    <p
-                      class="text-start px-4 mx-4"
-                      id="http-request-word-count"
-                    >
+                    <p class="http-request-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>PUT</strong>: Updates a specified resource.
                     </p>
-                    <p
-                      class="text-start px-4 mx-4"
-                      id="http-request-word-count"
-                    >
+                    <p class="http-request-word-count text-start px-4 mx-4">
                       <i class="fa-solid fa-circle-check text-primary"></i>
                       <strong>DELETE</strong>: Deletes a specified resource.
                     </p>
-                    <p class="text-start px-4" id="http-request-word-count">
+                    <p class="http-request-word-count text-start px-4">
                       <i
                         class="fa-solid fa-circle-chevron-right text-primary"
                       ></i>
@@ -926,7 +910,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body" id="http-method-word-count">
+        <div class="http-method-word-count offcanvas-body">
           <p>
             <strong>GET</strong> requests are the most common and widely used
             methods in APIs and websites. Simply put, the
@@ -951,7 +935,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body" id="http-method-word-count">
+        <div class="http-method-word-count offcanvas-body">
           <p>
             In web services, <strong>POST</strong> requests are used to send
             data to the API server to create or update a resource. The data sent
@@ -975,7 +959,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body" id="http-method-word-count">
+        <div class="http-method-word-count offcanvas-body">
           <p>
             Simlar to <strong>POST</strong>, <strong>PUT</strong> requests are
             used to send data to the API to update or create a resource. The
@@ -1003,7 +987,7 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body" id="http-method-word-count">
+        <div class="http-method-word-count offcanvas-body">
           <p>
             The <strong>DELETE</strong> method is exactly as it sounds: delete
             the resource at the specified URL. This method is one of the more
@@ -1022,7 +1006,6 @@
           height="440"
           src="https://www.youtube.com/embed/ALq0xKp3P9E?si=Tw0ZsQbY-D_zH6F3"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
@@ -1035,7 +1018,6 @@
           height="440"
           src="https://www.youtube.com/embed/-Zea7GB2OwA?si=hvSvtEVkeT7Kfwji"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
@@ -1048,7 +1030,6 @@
           height="440"
           src="https://www.youtube.com/embed/eesqK59rhGA?si=NGvFRp0k8M6eP2Ap"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen

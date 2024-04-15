@@ -27,6 +27,7 @@ $(document).ready(function () {
 
   // add audio event listener
   const audio = document.getElementById("audio");
+
   audio.addEventListener("play", function () {
     lyric_movement();
   });
@@ -61,11 +62,11 @@ $(document).ready(function () {
     "anchor-tag-word-count-display"
   );
 
-  // http section
-  totalWordCount += countElement("http-word-count", "http-word-count-display");
-
   // ajax section
   totalWordCount += countElement("ajax-word-count", "ajax-word-count-display");
+
+  // http section
+  totalWordCount += countElement("http-word-count", "http-word-count-display");
 
   // http request section
   totalWordCount += countElement(
@@ -85,7 +86,6 @@ $(document).ready(function () {
 
 function lyric_movement() {
   const lyric_str = lyrics.join("; ");
-  console.log(lyric_str);
   document.getElementById("lyric").innerHTML = lyrics.join(lyric_str);
   document.getElementById("lyric").style.animation =
     "lyricMove 1000s linear infinite";
@@ -95,9 +95,9 @@ function lyric_clear() {
   document.getElementById("lyric").style.animation = "";
 }
 
-function countElement(id, displayId) {
+function countElement(className, displayId) {
   let count = 0;
-  const texts = document.querySelectorAll(`#${id}`);
+  const texts = document.querySelectorAll(`.${className}`);
   texts.forEach((text) => {
     str = text.textContent;
     count += countWord(str);

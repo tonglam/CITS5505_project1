@@ -151,10 +151,19 @@ const url_map = {
 
 function handleCardClick(name) {
   url = url_map[name];
-  console.log("click to: name: [%s], url: [%s]", name, url);
   if (url) {
     window.open(url, "_blank");
   }
+}
+
+function hancleFlipOnTouch() {
+  const projectFlipContainer = document.getElementsByClassName(
+    "project-flip-container"
+  );
+
+  projectFlipContainer.addEventListener("touchstart", function () {
+    this.classList.toggle("hover");
+  });
 }
 
 // genertate random data
