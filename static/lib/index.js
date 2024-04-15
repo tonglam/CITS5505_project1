@@ -88,7 +88,7 @@ function lyric_movement() {
   console.log(lyric_str);
   document.getElementById("lyric").innerHTML = lyrics.join(lyric_str);
   document.getElementById("lyric").style.animation =
-    "move 1000s linear infinite";
+    "lyricMove 1000s linear infinite";
 }
 
 function lyric_clear() {

@@ -10,7 +10,6 @@ $(document).ready(function () {
   // change bottom navigation active color
   const titleFull = $("title").text();
   const title = titleFull.split(" - ")[0];
-  const navId = "#nav" + title;
   const bottemId = "#bottom" + title;
   $(bottemId).css("color", "red");
 

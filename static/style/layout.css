@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jersey+25&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jersey+25&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Dosis", sans-serif;
 }
 
 html {
@@ -8,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 section {
@@ -17,8 +21,7 @@ section {
 
 h1 {
   color: #00bfbf;
-  font-family: "Playfair Display", serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 800;
   text-transform: capitalize;
   line-height: 1;
@@ -26,7 +29,7 @@ h1 {
   text-align: center;
   align-items: center;
   border-bottom: 3px dotted #008080;
-  padding-bottom: 6px;
+  padding-bottom: 20px;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
     0 2px 4px -2px var(--tw-shadow-color);
@@ -119,7 +122,7 @@ p {
   }
 }
 
-@keyframes move {
+@keyframes lyricMove {
   0% {
     transform: translateX(0);
   }
