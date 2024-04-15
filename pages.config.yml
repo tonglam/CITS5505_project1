@@ -1,0 +1,4 @@
+name: CITS5505_project1
+routes:
+  - pattern: "/*"
+    script: "index.html"
