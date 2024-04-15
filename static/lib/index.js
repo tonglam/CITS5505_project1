@@ -1,6 +1,5 @@
 const lyrics = [
-  "Song for Hyperlinks",
-  "[Verse]",
+  "[Song for Hyperlinks]",
   "In the early days when the internet was new",
   "A world of information",
   "Right at our fingertips",
@@ -11,7 +10,6 @@ const lyrics = [
   "Hyperlinks leading the way",
   "(Scroll, scroll, find your place)",
   "Discovering a whole new space",
-  "[Verse]",
   "HTML",
   "CSS",
   "Building blocks of the web",
@@ -24,7 +22,18 @@ const lyrics = [
 ];
 
 $(document).ready(function () {
-  // 歌词走马灯
+  // start lyric movement
+  lyric_movement();
+
+  // add audio event listener
+  const audio = document.getElementById("audio");
+  audio.addEventListener("play", function () {
+    lyric_movement();
+  });
+
+  audio.addEventListener("pause", function () {
+    lyric_clear();
+  });
 
   let totalWordCount = 0;
 
@@ -73,6 +82,18 @@ $(document).ready(function () {
   document.getElementById("total-word-count-display").innerHTML =
     totalWordCountHtml;
 });
+
+function lyric_movement() {
+  const lyric_str = lyrics.join("; ");
+  console.log(lyric_str);
+  document.getElementById("lyric").innerHTML = lyrics.join(lyric_str);
+  document.getElementById("lyric").style.animation =
+    "move 1000s linear infinite";
+}
+
+function lyric_clear() {
+  document.getElementById("lyric").style.animation = "";
+}
 
 function countElement(id, displayId) {
   let count = 0;

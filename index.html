@@ -36,7 +36,7 @@
     <header>
       <nav
         class="navbar navbar-light bg-body-tertiary d-flex justify-content-between px-3 px-md-5"
-        id="navMenu"
+        id="navBar"
       >
         <div class="col-5 navbar-brand">
           <div class="row align-items-center">
@@ -155,15 +155,15 @@
       </div>
 
       <div class="col-6 d-none d-md-flex align-items-center gap-3">
-        <audio controls autoplay loop>
+        <audio controls autoplay loop id="audio">
           <source
             src="/static/audio/Song for Hyperlinks.mp3"
             type="audio/mp3"
           />
           Your browser does not support the audio element.
         </audio>
-        <div class="pt-3">
-          <p>sadadasdadasdsadadasdadasdsadadasdadasd</p>
+        <div class="lyric-block pt-3">
+          <div class="lyric" id="lyric"></div>
         </div>
       </div>
 
@@ -1067,7 +1067,7 @@
           alt="arrowUp"
           title="Scroll to top"
           loading="lazy"
-          onclick="location.href='#pageNav'"
+          onclick="location.href='#navBar'"
         />
       </div>
     </div>
@@ -1086,7 +1086,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4 mx-auto mb-4">
+          <div class="col-5 mx-auto mb-4">
             <div class="d-flex">
               <p>
                 1. Booststrap official document:
@@ -1102,48 +1102,205 @@
 
             <div class="d-flex">
               <p>
-                2. Generate fake data:
+                2. Hyperlink | Definition and examples of use:
                 <a
-                  href="https://fakerapi.it/"
+                  href="https://www.ionos.com/digitalguide/websites/web-development/hyperlink-definition-and-examples-of-use/"
                   target="_blank"
                   class="text-decoration-none"
                 >
-                  fakerapi.it</a
+                  ionos.com</a
                 >
               </p>
             </div>
 
             <div class="d-flex">
               <p>
-                3. Hello World! CSS Text Roller:
+                3. HTML Anchor Element: What Are Anchor Links & How to Use Them:
                 <a
-                  href="https://codepen.io/pokecoder/pen/YzxmMrz"
+                  href="https://www.semrush.com/blog/html-anchor/"
                   target="_blank"
                   class="text-decoration-none"
                 >
-                  Ale</a
+                  Carlos Silva</a
                 >
               </p>
             </div>
 
             <div class="d-flex">
               <p>
-                4. css floating animation:
+                4. What is a Hyperlink? Definition for HTML Link Beginners:
                 <a
-                  href="https://codesandbox.io/p/sandbox/css-floating-animation-mqtoy"
+                  href="https://www.freecodecamp.org/news/what-is-a-hyperlink-definition-for-html-link-beginners/"
                   target="_blank"
                   class="text-decoration-none"
                 >
-                  mqtoy</a
+                  Dionysia Lemonaki</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                5. Add Anchor Tags To Jump To Specific Location On A Page:
+                <a
+                  href="https://help.typepad.com/anchor-tags.html"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  help.typepad.com</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                6. Hyperlink:
+                <a
+                  href="https://en.wikipedia.org/wiki/Hyperlink"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  wikipedia</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                7. How to make http hyperlink clickable?:
+                <a
+                  href="https://github.com/wez/wezterm/discussions/1292"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  azzamsa</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                8. Types of Hyperlinks:
+                <a
+                  href="https://www.uwyo.edu/cessuptmedia/tipsheets/frontpage/lesson13_hyperlinks.pdf"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  uwyo.edu</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                9. HTML Links Hyperlinks:
+                <a
+                  href="https://www.geeksforgeeks.org/html-links/"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  geeksforgeeks.org</a
                 >
               </p>
             </div>
           </div>
 
-          <div class="col-md-4 mx-auto mb-4">
+          <div class="col-5 mx-auto mb-4">
             <div class="d-flex">
               <p>
-                5. css实现箭头抖动效果:
+                10. HTTP:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  developer.mozilla.org</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                11. HTTP Documentation:
+                <a
+                  href="https://httpwg.org/specs/"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  httpwg.org</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                12. How to open specific web browsers using hyperlinks:
+                <a
+                  href="https://www.computerworld.com/article/1637323/how-to-open-specific-web-browsers-using-hyperlinks.html"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  How-To</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                13. Creating hyperlinks:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  developer.mozilla.org</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                14. 7 HTTP methods every web developer should know and how to
+                test them:
+                <a
+                  href="https://assertible.com/blog/7-http-methods-every-web-developer-should-know-and-how-to-test-them"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  Cody Reichert</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                15. Content Summary by:
+                <a
+                  href="https://www.perplexity.ai/"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  perplexity.ai</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                16. Song of the hyperlinks created by:
+                <a
+                  href="https://suno.com/song/edd5967a-6913-43da-9d0f-6ef3db7f4ad1"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  suno</a
+                >
+              </p>
+            </div>
+
+            <div class="d-flex">
+              <p>
+                17. The css implements the arrow jitter effect:
                 <a
                   href="https://blog.csdn.net/qq_35695041/article/details/102720767"
                   target="_blank"
@@ -1156,25 +1313,12 @@
 
             <div class="d-flex">
               <p>
-                6. Simple CSS 3D Rotate Animation:
+                18. Use pure CSS to achieve text wandering effect:
                 <a
-                  href="https://codepen.io/sungaila/pen/LzMgjE"
+                  href="https://zhuanlan.zhihu.com/p/378127144"
                   target="_blank"
                   class="text-decoration-none"
-                  >Michael
-                </a>
-              </p>
-            </div>
-
-            <div class="d-flex">
-              <p>
-                7. Create a CSS Flipping Animation:
-                <a
-                  href="https://davidwalsh.name/css-flip"
-                  target="_blank"
-                  class="text-decoration-none"
-                >
-                  David Walsh</a
+                  >Gols</a
                 >
               </p>
             </div>
