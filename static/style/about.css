@@ -106,6 +106,5 @@
 /* contact me section */
 
 .iconAnimation {
-  -webkit-animation: iconAnimation 0.5s infinite;
-  -webkit-animation-fill-mode: both;
+  animation: iconAnimation 0.5s infinite;
 }

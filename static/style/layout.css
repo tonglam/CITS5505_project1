@@ -110,7 +110,7 @@ p {
   }
 }
 
-@-webkit-keyframes iconAnimation {
+@keyframes iconAnimation {
   0% {
     -webkit-transform: translate(0, 0);
   }
